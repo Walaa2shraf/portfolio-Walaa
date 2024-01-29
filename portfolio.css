@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Poppins, sans-serif; 
+    text-decoration: none !important;
+}
+body{
+    overflow-x: hidden;
+}
+.main-width{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.9),rgb(106, 27, 154));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header{
+    padding: 40px 0px 30px ;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo i{
+    height: 55px;
+    width: 55px;
+    background: transparent;
+    border: 2px solid #be6add;
+    color: #be6add;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* rgb(234, 128, 252) */
+} 
+nav .hamb{
+    width: 35px;
+    height: 24px;
+    right: 3%;
+    top: 60px;
+    z-index: 5;
+    background:transparent;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+nav .hamb span{
+    display: block;
+    background: #be6add ;
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    transition-property: transform, opasity; 
+}
+nav .hamb span:nth-child(2){
+    margin: 7px 0;
+}
+.nav-list{
+    list-style: none;
+}
+.nav-list li {
+    display: inline-block;
+}
+.nav-list li:not(:last-child) a{
+    display: inline-block;
+    color:#eee;
+    margin-left: 55px ;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav-list li:not(:last-child) a:hover{
+    color:#be6add;
+    transition:0.4s;
+}
+.cont a{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #be6add;
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color:#eee;
+    font-weight: 500;
+}
+.cont:hover a{
+    background: #be6add;
+    color: #eee;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+.cont{
+    margin-left: 50px;
+}
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.hero-text{
+    color: #eee;
+    flex-direction: column;
+    /* flex-direction: column; */
+}
+.hero-text h3,h1,p{
+    padding: 5%;
+}
+.btn{
+    margin-left: 40px;
+    background: none;
+    border: none;
+}
+.btn a{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #be6add;
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color:#be6add;
+    font-weight: 500;
+}
+.btn a:hover{
+    background: #be6add;
+    color: #eee;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+.profile{
+    background: url(depositphotos_180045696-stock-illustration-violet-blue-watercolor-hand-drawn-removebg-preview.png);
+}
+.hero-text h1{
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+.hero-text h1 span{
+    color: #be6add;
+}
+.hero-text h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero-text p{
+    /* width: 440px; */
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}   
+.walaa{
+    text-align: center;
+}
+.me h1{
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width:930px){
+    nav .hamb{
+        display: initial;
+    }
+    .click{
+        top: 46px;
+    }
+    .click span{
+        position:absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(40deg);
+        top: 0;
+    }
+    .nav-list{
+        position: absolute;
+        top: 90px;
+        right: -65%;
+        bottom: 0;
+        width: 60%;
+        height: 35%;
+        background: black;
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    
+    }
+    .nav-list li{
+        display: block;
+        text-align: center;
+    }
+    .nav-list li a{
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .cont a{
+        color: #be6add;
+        position: absolute;
+        bottom: 0%;
+        right: 20%;
+        left: 20%;
+        padding: 7px 15px;
+    }
+    nav .nav-list.open{
+        right: 0;
+    }
+    /* ================================= */
+    .article {
+        flex-direction: column-reverse;
+        /* margin-bottom: 20px; */
+        padding-bottom:20px ;
+    }
+    .hero {
+        height: inherit;
+    }
+    .hero-text h3 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .profile{
+        max-width: 100%;
+    }
+    /* =================================== */
+    .me{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .walaa{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:px){
+    .nav-list{
+        right: -95%;
+    }
+
+}
+/* ===================================== About me ========================================= */
+.me{
+    display: flex;
+}
+.walaa img{
+    width: 70%;
+    border-radius: 20px;
+}
+.about-me{
+    flex-direction: column;
+    max-width: 70%;
+    font-size: 19px;
+}
+.about-me h2{
+    text-align: center;
+}
+.me-head{
+    display: block;
+    text-align: center;
+    flex-direction: column;
+}
+.sec-2{
+    box-shadow:0px 3px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    margin: 3%;
+    padding: 2%;
+}
+
+/* ================================================================================== */
+.container h2{
+    color: #be6add;
+    font-family:Poppins, sans-serif; 
+    font-weight: 800;
+}
+.progress{
+    background-color: #be6add;
+    
+}
+/* ============================================================================== */
+/* .projects{
+    box-shadow:0px 3px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+} */
+
