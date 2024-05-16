@@ -24,7 +24,7 @@
     <title>Walaa Ashraf</title>
   </head>
   <body>
-    <section class="hero">
+    <section class="hero" id="Home">
       <div class="main-width">
         <header>
           <div class="logo">
@@ -37,11 +37,11 @@
               <span></span>
             </div>
             <ul class="nav-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Projects</a></li>
-              <li class="cont"><a href="#">Contact Me</a></li>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li class="cont"><a href="#contact">Contact Me</a></li>
             </ul>
           </nav>
         </header>
@@ -67,7 +67,7 @@
     </section>
     <!-- ============================================================================================================== -->
 
-    <section class="sec-2">
+    <section class="sec-2" id="about-me">
       <div class="me-head">
         <h2>About Me</h2>
       </div>
@@ -97,7 +97,7 @@
     </section>
 
     <!-- ============================================================================================================== -->
-    <section class="bsb-skill-1 bg-dark py-3 py-md-5">
+    <section class="bsb-skill-1 bg-dark py-3 py-md-5" id="Skills">
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -201,7 +201,7 @@
       </div>
     </section>
     <!-- ============================================================================================================== -->
-    <div class="head-project">
+    <div class="head-project" id="projects">
       <h1 style="text-align: center">MY Projects</h1>
     </div>
     <section class="container projects">
@@ -212,12 +212,13 @@
             <div class="card-body">
               <h5 class="card-title">Manage Landing page</h5>
               <p class="card-text"></p>
-              <i class="fa-solid fa-link"
-                ><a href="https://walaa2shraf.github.io/landing-manage/"></a
-              ></i>
-              <i class="fa-brands fa-github"
-                ><a href="https://github.com/Walaa2shraf"></a
-              ></i>
+
+              <a href="https://walaa2shraf.github.io/landing-manage/">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <a href="https://github.com/Walaa2shraf">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -227,10 +228,12 @@
             <div class="card-body">
               <h5 class="card-title">products for Manage</h5>
               <p class="card-text"></p>
-              <i class="fa-solid fa-link"></i>
-              <i class="fa-brands fa-github"
-                ><a href="https://github.com/Walaa2shraf"></a
-              ></i>
+              <a href="https://walaa2shraf.github.io/Products_Manage/">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <a href="https://github.com/Walaa2shraf">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -240,10 +243,12 @@
             <div class="card-body">
               <h5 class="card-title">huddle Landing page</h5>
               <p class="card-text"></p>
-              <i class="fa-solid fa-link"></i>
-              <i class="fa-brands fa-github"
-                ><a href="https://github.com/Walaa2shraf"></a
-              ></i>
+              <a href="https://walaa2shraf.github.io/huddle/">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <a href="https://github.com/Walaa2shraf">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -253,10 +258,12 @@
             <div class="card-body">
               <h5 class="card-title">Form page</h5>
               <p class="card-text"></p>
-              <i class="fa-solid fa-link"></i>
-              <i class="fa-brands fa-github"
-                ><a href="https://github.com/Walaa2shraf"></a
-              ></i>
+              <a href="https://walaa2shraf.github.io/form/">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <a href="https://github.com/Walaa2shraf">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -275,6 +282,7 @@
     </div> -->
     <!-- =============================================================== -->
     <section
+      id="contact"
       class="paralax-mf footer-paralax sect-mt4 route"
       style="
         background: linear-gradient(
@@ -284,10 +292,12 @@
         );
         color: #eee;
         list-style: none;
+        margin: 0%;
+        padding: 0%;
       "
     >
       <div class="overlay-mf"></div>
-      <div class="container">
+      <div class="">
         <div class="row">
           <div class="col-sm-12">
             <div class="contact-mf">
@@ -368,24 +378,29 @@
                             <button
                               type="submit"
                               class="button button-a button-big button-rouded"
-                              style="background: none;
-                              border: none;"
+                              style="background: none; border: none"
                             >
-                              <a href="#" style="display: inline-block;
-                              background: transparent;
-                              border: 2px solid #be6add;
-                              padding: 9px 28px;
-                              border-radius: 30px;
-                              line-height: 1.3;
-                              color:#be6add;
-                              font-weight: 500;">Send Message</a>
+                              <a
+                                href="#"
+                                style="
+                                  display: inline-block;
+                                  background: transparent;
+                                  border: 2px solid #be6add;
+                                  padding: 9px 28px;
+                                  border-radius: 30px;
+                                  line-height: 1.3;
+                                  color: #be6add;
+                                  font-weight: 500;
+                                "
+                                >Send Message</a
+                              >
                             </button>
                           </div>
                         </div>
                       </form>
                     </div>
                   </div>
-                  <div class="col-md-6 p-5">
+                  <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0 ma-3">
                       <h5 class="title-left">Get in Touch</h5>
                     </div>
@@ -410,26 +425,26 @@
                       </ul>
                     </div>
                     <div class="socials">
-                      <ul style="list-style: none; display:flex;">
-                        <li style=" padding:10px;">
+                      <ul style="list-style: none; display: flex">
+                        <li style="padding: 10px">
                           <a href=""
                             ><span class="ico-circle"
                               ><i class="fa-brands fa-linkedin-in"></i></span
                           ></a>
                         </li>
-                        <li style=" padding:10px;">
+                        <li style="padding: 10px">
                           <a href=""
                             ><span class="ico-circle"
                               ><i class="fa-brands fa-facebook-f"></i></span
                           ></a>
                         </li>
-                        <li style=" padding:10px;">
+                        <li style="padding: 10px">
                           <a href=""
                             ><span class="ico-circle"
                               ><i class="fa-brands fa-instagram"></i></span
                           ></a>
                         </li>
-                        <li style=" padding:10px;">
+                        <li style="padding: 10px">
                           <a href=""
                             ><span class="ico-circle"
                               ><i class="fa-brands fa-twitter"></i></span
@@ -444,24 +459,20 @@
           </div>
         </div>
       </div>
-
-      <footer>
-        <div class="container ma-0" >
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="copyright-box">
-                <p class="copyright">&copy; Copyright All Rights Reserved</p>
-              </div>
-            </div>
-          </div>
+      <footer class="p-0 m-0">
+        <div class="copy p-0">
+          <p class="copyright">&copy; Copyright All Rights Reserved</p>
         </div>
+
         <div class="made">
-          <p>Made with <span style="color: mediumpurple;">&#10084;</span> By Walaa Ashraf</p>
+          <p>
+            Made with <span style="color: mediumpurple">&#10084;</span> By Walaa
+            Ashraf
+          </p>
         </div>
       </footer>
     </section>
-    
-    
+
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
